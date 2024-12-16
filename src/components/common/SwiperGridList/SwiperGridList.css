@@ -1,0 +1,31 @@
+.products-slide .swiper .swiper-slide {
+  height: 640px;
+}
+.products-slide .container {
+  position: relative;
+}
+.products-slide .swiper-button-next-product-all-grid,
+.products-slide .swiper-button-prev-product-all-grid,
+.products-slide .swiper-button-next-product-best-grid,
+.products-slide .swiper-button-prev-product-best-grid,
+.products-slide .swiper-button-next-product-sale-grid,
+.products-slide .swiper-button-prev-product-sale-grid {
+  font-size: 30px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 70%;
+  cursor: pointer;
+  color: blue;
+}
+.products-slide .swiper-button-prev-product-all-grid,
+.products-slide .swiper-button-prev-product-best-grid,
+.products-slide .swiper-button-prev-product-sale-grid {
+  right: 70%;
+}
+
+.products-slide .swiper-button-disabled,
+.products-slide .swiper-button-disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}

@@ -1,0 +1,13 @@
+.specialHeading {
+    padding: 30px 10px;
+    margin: 5px 0;
+    font-size: 30px;
+    color: red;
+}
+
+
+@media(max-width: 639px) {
+    .specialHeading {
+        font-size: 25px;
+    }
+}

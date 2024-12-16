@@ -1,0 +1,24 @@
+.special-images .container{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.special-images .container img{
+    width: 486px;
+    height: 226px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+@media(max-width: 767px) {
+    .special-images .container {
+        padding: 10px;
+    }
+    .special-images .container img {
+        width: 100%;
+    }
+}

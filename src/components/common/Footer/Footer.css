@@ -1,0 +1,91 @@
+.footer{
+    width: 100%;
+    background: #fff;
+    color: rgb(255, 0, 0);
+    margin-top: 30px;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 70px;
+    height: 75%;
+}
+.footer .container .col,.footer .container .col-f{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .col .info,.footer .container .col p{
+    color: black;
+    margin-left: 10px;
+}
+.footer .container .col h4,.footer .container .col-f h4{
+    margin: 60px 0 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer .container .col p,.footer .container .col-f p{
+    margin-bottom: 20px;
+}
+.footer .container .col a{
+    margin-bottom: 15px;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 20px;
+    display: flex;
+
+    justify-content: space-between;
+}
+.footer .container .col a:hover{
+    color: red;
+    margin-left: 15px;
+}
+.footer .container .col-f p,
+.footer .container .col .tawasel{
+color: #000000;
+font-size: 25px;
+}
+.footer .container .col-f .failed {
+    display: flex;
+}
+.footer .container .col-f .failed input ,.footer .container .col-f .failed button{
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.footer .col-f .failed input{
+    border-radius: 0  10px 10px 0;
+    background-color: #bebebe;
+    font-size: 18px;
+}
+.footer .container .col-f .failed button{
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px  0 0 10px;
+}
+.footer .container .col-f .follow h3{
+    margin: 10px 0 20px 0;
+}
+.footer .under-footer{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    border-top: 1px solid #bebebe;
+}
+.footer svg{
+    margin-left: 10px;
+    color: red;
+    font-size: 20px;
+}
+.footer .under-footer .text p{
+    font-size: 28px;
+    color: #000000;
+}
+.footer .under-footer .text p span{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}

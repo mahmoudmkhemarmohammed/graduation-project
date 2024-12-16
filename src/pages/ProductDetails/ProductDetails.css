@@ -1,0 +1,21 @@
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+.product-details .container {
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.product-details .container .img-box {
+    height: 530px;
+    width: 330px;
+    overflow: hidden;
+}

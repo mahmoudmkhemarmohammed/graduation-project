@@ -1,0 +1,55 @@
+.sidebar{
+    position: sticky;
+    top: 100px;
+    padding: 10px 10px 0 10px;
+    border-left: 1px solid #fc0000;
+    height: calc(100vh - 100px);
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.sidebar .search{
+    align-items: center;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.sidebar .search svg {
+    color: red;
+    margin-left: 10px;
+}
+.sidebar .search input{
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+.sidebar .category li,
+.sidebar .price li,
+.sidebar .rating li{
+    margin: 10px 0;
+}
+.sidebar .category li input,
+.sidebar .price li input,
+.sidebar .rating li input{
+    margin-left: 10px;
+}
+.sidebar .category li label,
+.sidebar .price li label
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+.sidebar h2{
+    color: red;
+    font-size: 35px;
+}
+.rat{
+    color: rgb(177, 128, 5);
+}
+.sidebar .gray{
+    color: gray;
+}

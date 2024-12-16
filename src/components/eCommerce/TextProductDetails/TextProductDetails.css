@@ -1,0 +1,50 @@
+.text-details h2 {
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.text-details p {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+}
+.text-details h2 span {
+    color: black;
+    font-size: 25px;
+}
+
+.text-details .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-details .box button {
+    background-color: red;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+
+.text-details .box button:hover {
+    background-color: black;
+}
+.text-details .box svg {
+    font-size: 35px;
+    color: gray;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.text-details .box svg:hover {
+    color: red;
+    scale: 1.2;
+}

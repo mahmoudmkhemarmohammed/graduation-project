@@ -1,0 +1,69 @@
+.about-us .container{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 150px);
+    background-color: rgb(234, 238, 243);
+  gap: 10px;
+  align-items: center;
+  border-radius: 20px;
+}
+.about-us .text{
+    width: 500px;
+}
+.about-us .text h1{
+  color: rgb(225, 45, 45);
+  font-size: 40px;
+  margin: 10px;
+
+  
+}
+.about-us .text p{
+    font-size: 25px;
+    margin: 10px;
+}
+.about-us .text h2{
+  color: rgb(225, 45, 45);
+  font-size: 40px;
+
+}
+.about-us .text h3{
+    color: rgb(121, 16, 16);
+    font-size:25px;
+    
+   
+}
+.about-us .boxs{
+    display: flex;
+    font-weight:bold;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+.about-us .box{
+    display: flex;
+    font-weight:bold;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+.about-us .img-box{
+   width: 600px;
+  height: 400px;
+}
+.about-us .img-box img{
+    height: 100%;
+    width: 100%;
+  animation: animate 1s linear infinite;
+  border-radius: 15px;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

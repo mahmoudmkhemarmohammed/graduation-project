@@ -1,0 +1,22 @@
+.special-images-two .container{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.special-images-two .container img {
+    width: 600px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+@media(max-width: 767px) {
+    .special-images-two .container {
+        padding: 10px;
+    }
+    .special-images-two .container img {
+        width: 100%;
+    }
+}
