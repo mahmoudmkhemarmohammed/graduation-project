@@ -9,7 +9,7 @@ const actGetSingleProduct = createAsyncThunk(
       const res = await axios.get(
         `/products/${productId}`
       );
-      return await res.data;
+      return await res.data.Product;
     } catch (error) {
       if (axios.isAxiosError(error)) {
         return rejectWithValue(error.message);

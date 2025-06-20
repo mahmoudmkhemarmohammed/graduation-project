@@ -14,6 +14,7 @@ const singleProductSlice = createSlice({
       state.error = null;
     });
     builder.addCase(actGetSingleProduct.fulfilled, (state, action) => {
+      state.loading = "succeeded";
       state.records = action.payload;
       state.error = null;
     });

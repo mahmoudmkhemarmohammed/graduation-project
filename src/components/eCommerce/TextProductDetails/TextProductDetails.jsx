@@ -1,8 +1,8 @@
 import "./TextProductDetails.css"
 import { FaHeart } from "react-icons/fa";
-const TextProductDetails = ({ title, price, desc, categ, size }) => {
+const TextProductDetails = ({ title, price, desc, categ, brand }) => {
   return (
-    <div className="text-details">
+    <div className="text-details max-lg:w-full">
       <h2>
         اسم المنتج : <span>{title}</span>
       </h2>
@@ -10,13 +10,13 @@ const TextProductDetails = ({ title, price, desc, categ, size }) => {
         السعر : <span>{price}</span> جنيه
       </h2>
       <h2>
-        الوصف : <p>{desc}</p>
+        الوصف : <p>{desc ? desc : title}</p>
       </h2>
       <h2>
         النوعيه : <span>{categ}</span>
       </h2>
       <h2>
-        الحجم : <span>{size}</span>
+        الماركة : <span>{brand}</span>
       </h2>
       <div className="box">
         <button>شراء المنتج</button>

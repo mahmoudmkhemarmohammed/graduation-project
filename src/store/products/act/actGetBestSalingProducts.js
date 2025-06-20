@@ -7,9 +7,9 @@ const actGetBestSalingProducts = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const res = await axios.get(
-        "/products?_sort=sales&_order=asc"
+        "/products/top-sale"
       );
-      return await res.data;
+      return await res.data.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {
         return rejectWithValue(error.message);

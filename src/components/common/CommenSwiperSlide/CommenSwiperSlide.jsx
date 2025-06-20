@@ -8,6 +8,7 @@ import slide_2 from "../../../assets/images/slider-02.jpg";
 import slide_3 from "../../../assets/images/slider-03.jpg";
 import slide_4 from "../../../assets/images/slider-4.jpg";
 import slide_5 from "../../../assets/images/slider-5.jpg";
+import slide_6 from "../../../assets/images/slider-6.jpg";
 const CommenSwiperSlide = () => {
   return (
     <section className="swiper-section">
@@ -37,6 +38,9 @@ const CommenSwiperSlide = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={slide_5} alt="slide-5" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_6} alt="slide-6" />
           </SwiperSlide>
         </Swiper>
       </div>

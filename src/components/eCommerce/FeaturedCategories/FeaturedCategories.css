@@ -1,31 +1,25 @@
-.featured-categories .container .swiper .swiper-slide {
-    width: 250px;
+.featured-categories .container .swiper .swiper-slide a {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
-    border: 1px solid #00000062;
+    background: #FFF;
     cursor: pointer;
-    padding: 30px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
-.featured-categories .container .swiper .swiper-slide:hover {
-    background-color: rgb(0, 5, 33);
+.featured-categories .container .swiper .swiper-slide a img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
 }
-.featured-categories .container .swiper .swiper-slide:hover h2 {
-    color: #FFF;
-}
-.featured-categories .container .swiper .swiper-slide img {
-    width: 80px;
-    height: 80px;
-}
-.featured-categories .container .swiper .swiper-slide svg {
+.featured-categories .container .swiper .swiper-slide a svg {
     font-size: 80px;
     color: #0073ff;
 }
 .featured-categories .container .swiper h2{
-    font-size: 28px;
+    font-size: 25px;
     color: red;
     margin-top: 10px;
 }

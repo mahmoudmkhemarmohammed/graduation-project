@@ -15,6 +15,7 @@ const bestSalingProductsSlice = createSlice({
       state.error = null;
     });
     builder.addCase(actGetBestSalingProducts.fulfilled, (state, action) => {
+      state.loading = "succeeded";
       state.records = action.payload;
       state.error = null;
     });

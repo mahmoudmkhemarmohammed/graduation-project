@@ -1,12 +1,17 @@
-import { BsSmartwatch } from "react-icons/bs";
-import { FcSmartphoneTablet } from "react-icons/fc";
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "./FeaturedCategories.css";
+import { useDispatch, useSelector } from "react-redux";
+import actGetCategories from "../../../store/categories/act/actGetCategories";
 import { Link } from "react-router-dom";
-import clothesImg from "../../../assets/images/clothes.png";
-import choesImg from "../../../assets/images/choes.png";
 const FeaturedCategories = () => {
+  const { records } = useSelector((state) => state.categories);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(actGetCategories());
+  }, [dispatch]);
+
   return (
     <section className="featured-categories">
       <div className="container">
@@ -26,39 +31,24 @@ const FeaturedCategories = () => {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             1200: {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
           }}
           modules={[Pagination]}
         >
-          <SwiperSlide>
-            <Link to={"/"}>
-              <FcSmartphoneTablet />
-              <h2>هواتف ذكيه</h2>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to={"/"}>
-              <BsSmartwatch />
-              <h2>ساعات ذكيه</h2>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to={"/"}>
-              <img src={clothesImg} alt="clothes" />
-              <h2>ملابس</h2>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to={"/"}>
-              <img src={choesImg} alt="choes" />
-              <h2>أحذيه</h2>
-            </Link>
-          </SwiperSlide>
+          {records &&
+            records.map((el) => (
+              <SwiperSlide key={el._id}>
+                <Link to={`/categories/products/${el._id}`}>
+                  <img src={el.image} alt={el.name} />
+                  <h2>{el.name}</h2>
+                </Link>
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </section>

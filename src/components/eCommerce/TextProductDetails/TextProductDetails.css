@@ -1,3 +1,6 @@
+.text-details {
+    flex-grow: 1;
+}
 .text-details h2 {
     font-size: 35px;
     color: red;

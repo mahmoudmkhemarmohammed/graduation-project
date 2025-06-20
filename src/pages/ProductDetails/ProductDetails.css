@@ -8,6 +8,7 @@
     padding: 60px 20px;
     width: 100%;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     background-color: #FFF;
@@ -15,7 +16,17 @@
 }
 
 .product-details .container .img-box {
-    height: 530px;
-    width: 330px;
-    overflow: hidden;
+    display: flex;
+    gap: 10px;
+}
+
+.product-details .container .img-box .images img{
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.product-details .container .img-box .zoom img {
+    height: 630px;
+    width: 630px;
 }

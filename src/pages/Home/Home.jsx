@@ -5,13 +5,12 @@ import SpecialImagesTwo from "../../components/common/SpecialImagesTwo/SpecialIm
 import SwiperGridList from "../../components/common/SwiperGridList/SwiperGridList"
 import FeaturedCategories from "../../components/eCommerce/FeaturedCategories/FeaturedCategories"
 import actGetBestSalingProducts from "../../store/products/act/actGetBestSalingProducts"
-import actGetOnSaleProducts from "../../store/products/act/actGetOnSaleProducts"
 import actGetProducts from "../../store/products/act/actGetProducts"
 const Home = () => {
   return (
     <>
     <CommenSwiperSlide />
-    <SpecialHeading title={"الفئات المميزة"}/>
+    <SpecialHeading title={"الفئات"}/>
     <FeaturedCategories />
     <SpecialHeading title={"منتجاتنا"} />
     <SwiperGridList stateSelector={(state) => state.products} actionAsync={actGetProducts} btnStyle={"all"}/>
@@ -20,7 +19,7 @@ const Home = () => {
     <SwiperGridList stateSelector={(state) => state.bestSalingProducts} actionAsync={actGetBestSalingProducts} btnStyle={"best"}/>
     <SpecialImagesTwo />
     <SpecialHeading title={"التي تحتوي علي خصم"} />
-    <SwiperGridList stateSelector={(state) => state.onSaleProducts} actionAsync={actGetOnSaleProducts} btnStyle={"sale"}/>
+    <SwiperGridList stateSelector={(state) => state.bestSalingProducts} actionAsync={actGetBestSalingProducts} btnStyle={"best"}/>
     </>
   )
 }

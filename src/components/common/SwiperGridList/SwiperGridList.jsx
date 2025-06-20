@@ -11,7 +11,7 @@ const SwiperGridList = ({ stateSelector, actionAsync, btnStyle }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(actionAsync());
-  }, [dispatch]);
+  }, [dispatch , actionAsync]);
   return (
     <section className="products-slide">
       <div className="container">
@@ -44,14 +44,13 @@ const SwiperGridList = ({ stateSelector, actionAsync, btnStyle }) => {
           modules={[Pagination, Navigation]}
         >
           <Loading status={loading} error={error}>
-            {records.map((record) => (
-              <SwiperSlide key={record.id}>
+            {records && records.map((record) => (
+              <SwiperSlide key={record._id}>
                 <Card
-                  img={record.img}
-                  title={record.title}
-                  desc={record.title}
+                  images={record.images}
+                  name={record.name}
                   price={record.price}
-                  productId={record.id}
+                  productId={record._id}
                 />
               </SwiperSlide>
             ))}
